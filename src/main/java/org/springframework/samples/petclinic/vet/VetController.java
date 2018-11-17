@@ -32,6 +32,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 import java.util.Map;
 import org.springframework.samples.petclinic.medicament.Medicament;
+import org.springframework.samples.petclinic.owner.PetType;
+import org.springframework.web.bind.annotation.ModelAttribute;
 
 
 
@@ -55,7 +57,7 @@ class VetController {
     public String showVetList(Map<String, Object> model) {
         // Here we are returning an object of type 'Vets' rather than a collection of Vet
         // objects so it is simpler for Object-Xml mapping
-        Vets vets = new Vets();
+        Vets vets = new Vets();                
         vets.getVetList().addAll(this.vets.findAll());
         model.put("vets", vets);
         return "vets/vetList";
@@ -73,7 +75,9 @@ class VetController {
     @GetMapping("/vets/new")
     public String initCreationForm(Map<String, Object> model) {
         Vet vet = new Vet();
+        
         model.put("vet", vet);
+        
         return VIEWS_VET_CREATE_OR_UPDATE_FORM;
     }
     
@@ -82,9 +86,8 @@ class VetController {
         if (result.hasErrors()) {
             return VIEWS_VET_CREATE_OR_UPDATE_FORM;
         } else {
-            this.vets.save(vet);
-            
-            return "redirect: vets/vetList";
+            this.vets.save(vet);            
+            return "redirect:/vets.html";
         }
     }
     
@@ -102,7 +105,7 @@ class VetController {
         } else {
             vet.setId(vetId);
             this.vets.save(vet);
-            return "redirect:/vets/vetList";
+            return "redirect:/vets.html";
         }
     }
     
@@ -111,8 +114,12 @@ class VetController {
         this.vets.delete(this.vets.findById(vetId));
         Collection<Vet> results = this.vets.findByName("");
         model.put("selections", result);
-        return "redirect:/vetList";
-       
+        return "redirect:/vets.html";       
+    }
+    
+    @ModelAttribute("specialties")
+    public Collection<Specialty> populatSpecialty() {
+        return this.vets.findSpecialityTypes();
     }
    
 
