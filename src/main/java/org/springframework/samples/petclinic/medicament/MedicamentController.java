@@ -50,7 +50,7 @@ class MedicamentController {
             return VIEWS_MEDICAMENT_CREATE_OR_UPDATE_FORM;
         } else {
             this.medicaments.save(medicament);
-            return "redirect:/medicament/" + medicament.getId();
+            return "redirect:/medicaments/";
         }
     }
     
