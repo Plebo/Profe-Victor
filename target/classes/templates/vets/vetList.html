@@ -22,15 +22,15 @@
           th:text="${specialty.name + ' '}" /> <span
           th:if="${vet.nrOfSpecialties == 0}">none</span></td>
           <th>
-               <a th:href="@{/vets/edit/__${vet.id}__}"  th:text="#{edit}">edit</a>
+               <a th:href="@{/vets/edit/__${vet.id}__}"  >Editar</a>
              
-              <a th:href="@{/vet/delete/__${vet.id}__}"  th:text="#{supr}"}>delete</a>
+              <a th:href="@{/vet/delete/__${vet.id}__}"  >Eliminar</a>
           </th>
       </tr>
     </tbody>
   </table>
   
-  <a class="btn btn-default" th:href="@{/vets/new}" th:text="#{vet}">Add Owner</a>
+  <a class="btn btn-default" th:href="@{/vets/new}" >Agregar Veterinarios</a>
 
 </body>
 </html>
