@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.springframework.samples.medicament;
+package org.springframework.samples.petclinic.medicament;
 
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -32,9 +32,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
-import org.springframework.samples.petclinic.vet.Vet;
-import org.springframework.samples.petclinic.vet.VetController;
-import org.springframework.samples.petclinic.vet.VetRepository;
+import org.springframework.samples.petclinic.medicament.Medicament;
+import org.springframework.samples.petclinic.medicament.MedicamentController;
+import org.springframework.samples.petclinic.medicament.MedicamentRepository;
 /**
  *
  * @author Jose Pablo
@@ -42,5 +42,24 @@ import org.springframework.samples.petclinic.vet.VetRepository;
 @RunWith(SpringRunner.class)
 @WebMvcTest(MedicamentController.class)
 public class MedicamentControllerTest {
+private static final int TEST_MEDICAMENT_ID = 10;
     
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @MockBean
+    private MedicamentRepository medicament;
+
+    @Before
+    public void setup() {
+        Medicament med = new Medicament();
+        med.setNombre("1");
+        med.setPresentacion("q");
+        med.setIngredientes("q");
+        med.setId(10);
+        
+    }        
+
 }
+

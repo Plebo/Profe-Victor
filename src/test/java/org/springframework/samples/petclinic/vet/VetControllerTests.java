@@ -34,7 +34,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class VetControllerTests {
     
     private static final int TEST_VET_ID = 30;
-
+    private Vets vets1;
+    
     @Autowired
     private MockMvc mockMvc;
 
@@ -43,23 +44,29 @@ public class VetControllerTests {
 
     @Before
     public void setup() {
-        Vet james = new Vet();
+        /*Vet james = new Vet();
+        
         james.setFirstName("James");
         james.setLastName("Carter");
-        james.setTelephone("");
-        james.setBusiness_hours("");
+        james.setTelephone("9612594528");
+        james.setBusiness_hours("12:13");        
         james.setId(30); 
+        */
+         vets1 = new Vets();                
+        vets1.getVetList().addAll(this.vets.findAll());
+        
     }
     
     @Test
     public void testShowVetList() throws Exception {
-        mockMvc.perform(get("/vets.html", TEST_VET_ID))
+        mockMvc.perform(get("/vets.html"))
             .andExpect(status().isOk())
-            .andExpect(model().attribute("vet", hasProperty("lastName", is("James"))))
-            .andExpect(model().attribute("vet", hasProperty("firstName", is("Carter"))))
-            .andExpect(model().attribute("vet", hasProperty("telephone", is("9612594528"))))
-            .andExpect(model().attribute("vet", hasProperty("business_hours", is("14:16"))))            
-            .andExpect(view().name("vets/vetList.html"));
+           .andExpect(model().attribute("vets", hasProperty("vetList", is(vets1))))
+ /*           .andExpect(model().attribute("vets", hasProperty("firstName", is("James"))))
+            .andExpect(model().attribute("vets", hasProperty("telephone", is("9612594528"))))
+            .andExpect(model().attribute("vets", hasProperty("business_hours", is("12:13"))))            
+*/
+.andExpect(view().name("/vetList.html"));
     }
 
 
