@@ -21,9 +21,11 @@ import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
-
+import org.*;
 import javax.validation.Valid;
 import java.util.Collection;
+import java.util.Map;
+import org.springframework.samples.petclinic.vet.Vet;
 
 /**
  * @author Juergen Hoeller
@@ -105,5 +107,16 @@ class PetController {
             return "redirect:/owners/{ownerId}";
         }
     }
+    
+    //@GetMapping("/reportaje")
+    //public String mostrarPets(Map<String, Object>model){
+    //    Collection<Pet> pet1 = this.pets.findAll();
+    //    model.put("selections", pet1);
+    //    return "/owners/ReporteMascotas/";
+    //}
+    
+    
+      
+    
 
 }

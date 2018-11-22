@@ -16,6 +16,7 @@
 package org.springframework.samples.petclinic.owner;
 
 import java.util.Collection;
+import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
@@ -52,6 +53,12 @@ public interface OwnerRepository extends Repository<Owner, Integer> {
     @Query("SELECT owner FROM Owner owner left join fetch owner.pets WHERE owner.id =:id")
     @Transactional(readOnly = true)
     Owner findById(@Param("id") Integer id);
+    
+    @Query("Select pet from Pet pet")
+    @Transactional (readOnly= true)
+    Collection<Pet> findAll();
+    
+    
 
     /**
      * Save an {@link Owner} to the data store, either inserting or updating it.

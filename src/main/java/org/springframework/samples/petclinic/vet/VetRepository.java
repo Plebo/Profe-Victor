@@ -57,7 +57,9 @@ public interface VetRepository extends Repository<Vet, Integer> {
     @Query("SELECT specialties FROM Specialty specialties ORDER BY specialties.name")
     @Transactional(readOnly = true)
     List<Specialty> findSpecialityTypes();
-
+    
+    //@Query("select distinct a.first_name, a.last_name from vets a, specialties b, vet_specialties c where c.vet_id=a.id")
+   
    void save(Vet vet);
    
    

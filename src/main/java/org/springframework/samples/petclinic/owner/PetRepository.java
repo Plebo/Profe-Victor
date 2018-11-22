@@ -15,10 +15,13 @@
  */
 package org.springframework.samples.petclinic.owner;
 
+import java.util.Collection;
 import java.util.List;
+import org.springframework.dao.DataAccessException;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
+import org.springframework.samples.petclinic.vet.Vet;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
@@ -36,9 +39,18 @@ public interface PetRepository extends Repository<Pet, Integer> {
      * Retrieve all {@link PetType}s from the data store.
      * @return a Collection of {@link PetType}s.
      */
+    //@Transactional(readOnly = true)   
+    //Collection<Pet> findAll() throws DataAccessException;
+    
     @Query("SELECT ptype FROM PetType ptype ORDER BY ptype.name")
     @Transactional(readOnly = true)
     List<PetType> findPetTypes();
+    
+    //@Query("select distinct c.name as mascota, c.type_id as especie, owners.first_name as dueño from pets c, types, owners where c.owner_id=owners.id ")
+    //@Transactional(readOnly = true)
+    //List<Pet> findAll2();
+    
+    
 
     /**
      * Retrieve a {@link Pet} from the data store by id.
@@ -47,12 +59,15 @@ public interface PetRepository extends Repository<Pet, Integer> {
      */
     @Transactional(readOnly = true)
     Pet findById(Integer id);
+    //SELECT DISTINCT name as mascota, type_id as Especie, first_name as dueño from pets inner join owners on pets.owner_id=owners.id
 
+    
     /**
      * Save a {@link Pet} to the data store, either inserting or updating it.
      * @param pet the {@link Pet} to save
      */
     void save(Pet pet);
+    
 
 }
 

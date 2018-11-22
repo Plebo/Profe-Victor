@@ -40,10 +40,12 @@ class OwnerController {
 
     private static final String VIEWS_OWNER_CREATE_OR_UPDATE_FORM = "owners/createOrUpdateOwnerForm";
     private final OwnerRepository owners;
+    private final PetRepository pets;
 
 
-    public OwnerController(OwnerRepository clinicService) {
+    public OwnerController(OwnerRepository clinicService, PetRepository pet) {
         this.owners = clinicService;
+        this.pets =pet;
     }
 
     @InitBinder
@@ -129,5 +131,15 @@ class OwnerController {
         mav.addObject(this.owners.findById(ownerId));
         return mav;
     }
+    
+    @GetMapping("/reportaje")
+    public String processFindForm(Pet pet, BindingResult result, Map<String, Object> model) {
 
+        Collection<Pet> results = this.owners.findAll();
+            model.put("selections", results);
+            return "owners/ReporteMascotas";
+        
+    }
+
+   
 }
