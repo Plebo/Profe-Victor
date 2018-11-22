@@ -33,7 +33,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(VetController.class)
 public class VetControllerTests {
     
-    private static final int TEST_VET_ID = 1;
+    private static final int TEST_VET_ID = 30;
 
     @Autowired
     private MockMvc mockMvc;
@@ -46,16 +46,9 @@ public class VetControllerTests {
         Vet james = new Vet();
         james.setFirstName("James");
         james.setLastName("Carter");
-        james.setId(30);
-        Vet helen = new Vet();
-        helen.setFirstName("Helen");
-        helen.setLastName("Leary");
-        helen.setId(31);
-        Specialty radiology = new Specialty();
-        radiology.setId(1);
-        radiology.setName("radiology");
-        helen.addSpecialty(radiology);
-        given(this.vets.findAll()).willReturn(Lists.newArrayList(james, helen));
+        james.setTelephone("");
+        james.setBusiness_hours("");
+        james.setId(30); 
     }
     
     @Test
@@ -65,8 +58,7 @@ public class VetControllerTests {
             .andExpect(model().attribute("vet", hasProperty("lastName", is("James"))))
             .andExpect(model().attribute("vet", hasProperty("firstName", is("Carter"))))
             .andExpect(model().attribute("vet", hasProperty("telephone", is("9612594528"))))
-            .andExpect(model().attribute("vet", hasProperty("business_hours", is("14:16"))))
-            .andExpect(model().attribute("vet", hasProperty("specialties", is("1"))))
+            .andExpect(model().attribute("vet", hasProperty("business_hours", is("14:16"))))            
             .andExpect(view().name("vets/vetList.html"));
     }
 
