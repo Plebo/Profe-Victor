@@ -64,6 +64,5 @@ public interface VetRepository extends Repository<Vet, Integer> {
    
    
    void delete(Vet vet);
-   
-//   void saveSpetiality(Vet_specialties specialties);
+      
 }

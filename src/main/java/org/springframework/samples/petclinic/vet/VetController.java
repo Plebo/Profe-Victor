@@ -74,10 +74,8 @@ class VetController {
     
     @GetMapping("/vets/new")
     public String initCreationForm(Map<String, Object> model) {
-        Vet vet = new Vet();
-        
-        model.put("vet", vet);
-        
+        Vet vet = new Vet();        
+        model.put("vet", vet);        
         return VIEWS_VET_CREATE_OR_UPDATE_FORM;
     }
     
@@ -89,7 +87,7 @@ class VetController {
             this.vets.save(vet);            
             return "redirect:/vets.html";
         }
-    }
+    }           
     
     @GetMapping("/vets/edit/{vetId}")
     public String initUpdateVetForm(@PathVariable("vetId") int vetId, Model model) {

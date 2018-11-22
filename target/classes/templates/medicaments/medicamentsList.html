@@ -17,9 +17,10 @@
         </thead>
         <tbody>
           <tr th:each="medicament : ${selections}">
-              <td>
-                  <a th:href="@{/medicament/__${medicament.id}__}" th:text="${medicament.nombre}"/></a>
-              </td>
+              
+<!--                  <a th:href="@{/medicament/__${medicament.id}__}" th:text="${medicament.nombre}"/></a>-->
+                  <td th:text="${medicament.nombre}"/>
+              
               <td th:text="${medicament.ingredientes}"/>
               <td th:text="${medicament.presentacion}"/>
               <td>

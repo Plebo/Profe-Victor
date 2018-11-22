@@ -27,6 +27,8 @@ import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotEmpty;
@@ -35,6 +37,7 @@ import javax.xml.bind.annotation.XmlElement;
 import org.springframework.beans.support.MutableSortDefinition;
 import org.springframework.beans.support.PropertyComparator;
 import org.springframework.samples.petclinic.model.Person;
+import org.springframework.samples.petclinic.owner.PetType;
 
 /**
  * Simple JavaBean domain object representing a veterinarian.
@@ -55,7 +58,7 @@ public class Vet extends Person {
     
     @Column(name = "business_hours")
     @NotEmpty    
-    private String business_hours;
+    private String business_hours;        
 
     public String getBusiness_hours() {
         return business_hours;
@@ -72,7 +75,7 @@ public class Vet extends Person {
     public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
-          
+    
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "vet_specialties", joinColumns = @JoinColumn(name = "vet_id"), inverseJoinColumns = @JoinColumn(name = "specialty_id"))
     private Set<Specialty> specialties;
@@ -95,6 +98,10 @@ public class Vet extends Person {
                 new MutableSortDefinition("name", true, true));
         return Collections.unmodifiableList(sortedSpecs);
     }
+    
+    public void setSpecialties(List<Specialty> specialties){
+        addSpecialty(specialties.get(0));
+    }
 
     public int getNrOfSpecialties() {
         return getSpecialtiesInternal().size();
@@ -103,5 +110,7 @@ public class Vet extends Person {
     public void addSpecialty(Specialty specialty) {
         getSpecialtiesInternal().add(specialty);
     }
+    
+    
 
 }
