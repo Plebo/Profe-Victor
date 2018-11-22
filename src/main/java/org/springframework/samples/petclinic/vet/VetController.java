@@ -119,6 +119,18 @@ class VetController {
     public Collection<Specialty> populatSpecialty() {
         return this.vets.findSpecialityTypes();
     }
-   
+    
+    @GetMapping("/reporte")
+    public String showVets(Vet vet, BindingResult result, Map<String, Object> model){
+          Collection<Vet> results =this.vets.findAll();
+          model.put("selections", results);
+        return "/vets/ReporteVets";
+    }
+//     @GetMapping({ "/vets/new" })
+//    public @ResponseBody Vets showList() {
+//        Vets vets = new Vets();
+//        vets.getVetList().addAll(this.vets.findAll());
+//        return vets;
+//    }
 
 }
