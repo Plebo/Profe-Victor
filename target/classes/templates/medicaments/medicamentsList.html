@@ -24,8 +24,9 @@
               <td th:text="${medicament.ingredientes}"/>
               <td th:text="${medicament.presentacion}"/>
               <td>
-                  <a th:href="@{/medicament/delete/__${medicament.id}__}">Eliminar</a>
                   <a th:href="@{/medicament/edit/__${medicament.id}__}">Editar</a>
+                  <a th:href="@{/medicament/delete/__${medicament.id}__}">Eliminar</a>
+                  
               </td>
           </tr>
         </tbody>

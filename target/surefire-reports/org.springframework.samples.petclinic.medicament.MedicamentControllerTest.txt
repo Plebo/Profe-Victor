@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.springframework.samples.petclinic.medicament.MedicamentControllerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.906 s <<< FAILURE! - in org.springframework.samples.petclinic.medicament.MedicamentControllerTest
-initializationError(org.springframework.samples.petclinic.medicament.MedicamentControllerTest)  Time elapsed: 0.015 s  <<< ERROR!
-java.lang.Exception: No runnable methods
-
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 58.442 s - in org.springframework.samples.petclinic.medicament.MedicamentControllerTest

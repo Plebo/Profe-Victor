@@ -12,6 +12,8 @@ CREATE TABLE IF NOT EXISTS vets (
   id INT(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   first_name VARCHAR(30),
   last_name VARCHAR(30),
+  telephone VARCHAR(30)
+  business_hours VARCHAR(30)
   INDEX(last_name)
 ) engine=InnoDB;
 
@@ -62,4 +64,12 @@ CREATE TABLE IF NOT EXISTS visits (
   visit_date DATE,
   description VARCHAR(255),
   FOREIGN KEY (pet_id) REFERENCES pets(id)
+) engine=InnoDB;
+
+CREATE TABLE IF NOT EXISTS medicaments(
+  id INT(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(80),
+  ingredientes VARCHAR(80),
+  presentacion VARCHAR(80),
+  INDEX(nombre)
 ) engine=InnoDB;

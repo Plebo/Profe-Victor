@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.springframework.samples.petclinic.vet.VetControllerTests" time="19.468" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.springframework.samples.petclinic.vet.VetControllerTests" time="30.699" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="MX"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\JOSEPA~1\AppData\Local\Temp\surefire7853884059964919307\surefirebooter970698179609747393.jar C:\Users\Jose Pablo\AppData\Local\Temp\surefire7853884059964919307 2018-11-22T12-49-55_197-jvmRun1 surefire3190945942736508667tmp surefire_0231788830343197781tmp"/>
+    <property name="sun.java.command" value="C:\Users\JOSEPA~1\AppData\Local\Temp\surefire2726651280598749308\surefirebooter5778571174495385217.jar C:\Users\Jose Pablo\AppData\Local\Temp\surefire2726651280598749308 2018-11-23T14-09-11_500-jvmRun1 surefire6985041679941739769tmp surefire_02219659993741896358tmp"/>
     <property name="test" value="org.springframework.samples.petclinic.vet.VetControllerTests"/>
     <property name="surefire.test.class.path" value="C:\Users\Jose Pablo\Documents\GitHub\Petclinic4A\target\test-classes;C:\Users\Jose Pablo\Documents\GitHub\Petclinic4A\target\classes;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\2.1.0.BUILD-SNAPSHOT\spring-boot-starter-actuator-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-starter\2.1.0.BUILD-SNAPSHOT\spring-boot-starter-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.1.0.BUILD-SNAPSHOT\spring-boot-starter-logging-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Jose Pablo\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Jose Pablo\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.1\log4j-to-slf4j-2.11.1.jar;C:\Users\Jose Pablo\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.1\log4j-api-2.11.1.jar;C:\Users\Jose Pablo\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\Users\Jose Pablo\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\Jose Pablo\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\2.1.0.BUILD-SNAPSHOT\spring-boot-actuator-autoconfigure-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-actuator\2.1.0.BUILD-SNAPSHOT\spring-boot-actuator-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.7\jackson-databind-2.9.7.jar;C:\Users\Jose Pablo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\Jose Pablo\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.7\jackson-datatype-jsr310-2.9.7.jar;C:\Users\Jose Pablo\.m2\repository\io\micrometer\micrometer-core\1.1.0\micrometer-core-1.1.0.jar;C:\Users\Jose Pablo\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.9\HdrHistogram-2.1.9.jar;C:\Users\Jose Pablo\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-starter-cache\2.1.0.BUILD-SNAPSHOT\spring-boot-starter-cache-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\spring-context\5.1.2.RELEASE\spring-context-5.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\spring-aop\5.1.2.RELEASE\spring-aop-5.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\spring-beans\5.1.2.RELEASE\spring-beans-5.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\spring-expression\5.1.2.RELEASE\spring-expression-5.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\spring-context-support\5.1.2.RELEASE\spring-context-support-5.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.1.0.BUILD-SNAPSHOT\spring-boot-starter-data-jpa-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.1.0.BUILD-SNAPSHOT\spring-boot-starter-aop-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\org\aspectj\aspectjweaver\1.9.2\aspectjweaver-1.9.2.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.1.0.BUILD-SNAPSHOT\spring-boot-starter-jdbc-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\com\zaxxer\HikariCP\3.2.0\HikariCP-3.2.0.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\spring-jdbc\5.1.2.RELEASE\spring-jdbc-5.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\javax\transaction\javax.transaction-api\1.3\javax.transaction-api-1.3.jar;C:\Users\Jose Pablo\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Jose Pablo\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Jose Pablo\.m2\repository\org\hibernate\hibernate-core\5.3.7.Final\hibernate-core-5.3.7.Final.jar;C:\Users\Jose Pablo\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\Jose Pablo\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Jose Pablo\.m2\repository\org\javassist\javassist\3.23.1-GA\javassist-3.23.1-GA.jar;C:\Users\Jose Pablo\.m2\repository\net\bytebuddy\byte-buddy\1.9.3\byte-buddy-1.9.3.jar;C:\Users\Jose Pablo\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Jose Pablo\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\Jose Pablo\.m2\repository\com\fasterxml\classmate\1.4.0\classmate-1.4.0.jar;C:\Users\Jose Pablo\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\Jose Pablo\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.4.Final\hibernate-commons-annotations-5.0.4.Final.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\data\spring-data-jpa\2.1.2.RELEASE\spring-data-jpa-2.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\data\spring-data-commons\2.1.2.RELEASE\spring-data-commons-2.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\spring-orm\5.1.2.RELEASE\spring-orm-5.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\spring-tx\5.1.2.RELEASE\spring-tx-5.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\spring-aspects\5.1.2.RELEASE\spring-aspects-5.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.1.0.BUILD-SNAPSHOT\spring-boot-starter-web-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.1.0.BUILD-SNAPSHOT\spring-boot-starter-json-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.7\jackson-datatype-jdk8-2.9.7.jar;C:\Users\Jose Pablo\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.7\jackson-module-parameter-names-2.9.7.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.1.0.BUILD-SNAPSHOT\spring-boot-starter-tomcat-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.12\tomcat-embed-core-9.0.12.jar;C:\Users\Jose Pablo\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.12\tomcat-embed-el-9.0.12.jar;C:\Users\Jose Pablo\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.12\tomcat-embed-websocket-9.0.12.jar;C:\Users\Jose Pablo\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.13.Final\hibernate-validator-6.0.13.Final.jar;C:\Users\Jose Pablo\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\spring-web\5.1.2.RELEASE\spring-web-5.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\spring-webmvc\5.1.2.RELEASE\spring-webmvc-5.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\2.1.0.BUILD-SNAPSHOT\spring-boot-starter-thymeleaf-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\org\thymeleaf\thymeleaf-spring5\3.0.11.RELEASE\thymeleaf-spring5-3.0.11.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\thymeleaf\thymeleaf\3.0.11.RELEASE\thymeleaf-3.0.11.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\thymeleaf\extras\thymeleaf-extras-java8time\3.0.1.RELEASE\thymeleaf-extras-java8time-3.0.1.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.1.0.BUILD-SNAPSHOT\spring-boot-starter-test-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-test\2.1.0.BUILD-SNAPSHOT\spring-boot-test-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.1.0.BUILD-SNAPSHOT\spring-boot-test-autoconfigure-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\Jose Pablo\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\Jose Pablo\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\Jose Pablo\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\Jose Pablo\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Jose Pablo\.m2\repository\org\assertj\assertj-core\3.11.1\assertj-core-3.11.1.jar;C:\Users\Jose Pablo\.m2\repository\org\mockito\mockito-core\2.23.0\mockito-core-2.23.0.jar;C:\Users\Jose Pablo\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.3\byte-buddy-agent-1.9.3.jar;C:\Users\Jose Pablo\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\Jose Pablo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Jose Pablo\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\Jose Pablo\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Jose Pablo\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\spring-core\5.1.2.RELEASE\spring-core-5.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\spring-jcl\5.1.2.RELEASE\spring-jcl-5.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\spring-test\5.1.2.RELEASE\spring-test-5.1.2.RELEASE.jar;C:\Users\Jose Pablo\.m2\repository\org\xmlunit\xmlunit-core\2.6.2\xmlunit-core-2.6.2.jar;C:\Users\Jose Pablo\.m2\repository\org\hsqldb\hsqldb\2.4.1\hsqldb-2.4.1.jar;C:\Users\Jose Pablo\.m2\repository\mysql\mysql-connector-java\8.0.13\mysql-connector-java-8.0.13.jar;C:\Users\Jose Pablo\.m2\repository\javax\cache\cache-api\1.1.0\cache-api-1.1.0.jar;C:\Users\Jose Pablo\.m2\repository\org\ehcache\ehcache\3.6.1\ehcache-3.6.1.jar;C:\Users\Jose Pablo\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Jose Pablo\.m2\repository\org\webjars\webjars-locator-core\0.35\webjars-locator-core-0.35.jar;C:\Users\Jose Pablo\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\Jose Pablo\.m2\repository\org\apache\commons\commons-compress\1.9\commons-compress-1.9.jar;C:\Users\Jose Pablo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.7\jackson-core-2.9.7.jar;C:\Users\Jose Pablo\.m2\repository\org\webjars\jquery\2.2.4\jquery-2.2.4.jar;C:\Users\Jose Pablo\.m2\repository\org\webjars\jquery-ui\1.11.4\jquery-ui-1.11.4.jar;C:\Users\Jose Pablo\.m2\repository\org\webjars\bootstrap\3.3.6\bootstrap-3.3.6.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-devtools\2.1.0.BUILD-SNAPSHOT\spring-boot-devtools-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot\2.1.0.BUILD-SNAPSHOT\spring-boot-2.1.0.BUILD-SNAPSHOT.jar;C:\Users\Jose Pablo\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.1.0.BUILD-SNAPSHOT\spring-boot-autoconfigure-2.1.0.BUILD-SNAPSHOT.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\JOSEPA~1\AppData\Local\Temp\surefire7853884059964919307\surefirebooter970698179609747393.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\JOSEPA~1\AppData\Local\Temp\surefire2726651280598749308\surefirebooter5778571174495385217.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_171\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,235 +62,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testShowVetList" classname="org.springframework.samples.petclinic.vet.VetControllerTests" time="4.313">
-    <failure message="Model attribute &apos;vets&apos;&#10;Expected: hasProperty(&quot;vetList&quot;, is &lt;org.springframework.samples.petclinic.vet.Vets@54c622a7&gt;)&#10;     but: property &apos;vetList&apos; was &lt;[]&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-Model attribute 'vets'
-Expected: hasProperty("vetList", is <org.springframework.samples.petclinic.vet.Vets@54c622a7>)
-     but: property 'vetList' was <[]>
-	at org.springframework.samples.petclinic.vet.VetControllerTests.testShowVetList(VetControllerTests.java:64)
-]]></failure>
-    <system-out><![CDATA[12:49:58.651 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class org.springframework.samples.petclinic.vet.VetControllerTests]
-12:49:58.667 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-12:49:58.698 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-12:49:58.760 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [org.springframework.samples.petclinic.vet.VetControllerTests] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
-12:49:58.839 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.springframework.samples.petclinic.vet.VetControllerTests], using SpringBootContextLoader
-12:49:58.839 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.springframework.samples.petclinic.vet.VetControllerTests]: class path resource [org/springframework/samples/petclinic/vet/VetControllerTests-context.xml] does not exist
-12:49:58.839 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.springframework.samples.petclinic.vet.VetControllerTests]: class path resource [org/springframework/samples/petclinic/vet/VetControllerTestsContext.groovy] does not exist
-12:49:58.839 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [org.springframework.samples.petclinic.vet.VetControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-12:49:58.839 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.springframework.samples.petclinic.vet.VetControllerTests]: VetControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-12:49:59.229 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [org.springframework.samples.petclinic.vet.VetControllerTests]
-12:49:59.635 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\Jose Pablo\Documents\GitHub\Petclinic4A\target\classes\org\springframework\samples\petclinic\PetClinicApplication.class]
-12:49:59.635 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.vet.VetControllerTests
-12:49:59.651 [main] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [org.springframework.samples.petclinic.vet.VetControllerTests]: using defaults.
-12:49:59.651 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-12:49:59.698 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@42a48628, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@293a5bf6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6aeb35e6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1283bb96, org.springframework.test.context.support.DirtiesContextTestExecutionListener@74f0ea28, org.springframework.test.context.transaction.TransactionalTestExecutionListener@f6efaab, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c19aaa5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3349e9bb, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@409bf450, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@38d8f54a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@49e53c76, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@351d00c0]
-12:49:59.714 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.springframework.samples.petclinic.vet.VetControllerTests]
-12:49:59.714 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.springframework.samples.petclinic.vet.VetControllerTests]
-12:49:59.714 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.springframework.samples.petclinic.vet.VetControllerTests]
-12:49:59.714 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.springframework.samples.petclinic.vet.VetControllerTests]
-12:49:59.714 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.springframework.samples.petclinic.vet.VetControllerTests]
-12:49:59.714 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.springframework.samples.petclinic.vet.VetControllerTests]
-12:49:59.729 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4218d6a3 testClass = VetControllerTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@76505305 testClass = VetControllerTests, locations = '{}', classes = '{class org.springframework.samples.petclinic.PetClinicApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@14cd1699 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@482cd91f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@75c072cb, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@b47bef29, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@3b938003, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@51834a52, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@29e3c6e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@60704c], resourceBasePath = '', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
-12:49:59.729 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.springframework.samples.petclinic.vet.VetControllerTests]
-12:49:59.729 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.springframework.samples.petclinic.vet.VetControllerTests]
-12:50:00.307 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true, server.port=-1}
-
-
-              |\      _,,,--,,_
-             /,`.-'`'   ._  \-;;,_
-  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
- |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
- |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
- |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
- |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
- |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
- |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
- ==================================================================/_/_/_/
-
-:: Built with Spring Boot :: 2.1.0.BUILD-SNAPSHOT
-
-
-2018-11-22 12:50:02.010  INFO 7576 --- [           main] o.s.s.petclinic.vet.VetControllerTests   : Starting VetControllerTests on DESKTOP-Sandoval with PID 7576 (started by Jose Pablo in C:\Users\Jose Pablo\Documents\GitHub\Petclinic4A)
-2018-11-22 12:50:02.042  INFO 7576 --- [           main] o.s.s.petclinic.vet.VetControllerTests   : No active profile set, falling back to default profiles: default
-2018-11-22 12:50:10.088  INFO 7576 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-22 12:50:12.510  INFO 7576 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2018-11-22 12:50:12.510  INFO 7576 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2018-11-22 12:50:12.604  INFO 7576 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 94 ms
-2018-11-22 12:50:12.792  INFO 7576 --- [           main] o.s.s.petclinic.vet.VetControllerTests   : Started VetControllerTests in 12.453 seconds (JVM running for 16.116)
-
-MockHttpServletRequest:
-      HTTP Method = GET
-      Request URI = /vets.html
-       Parameters = {}
-          Headers = {}
-             Body = <no character encoding set>
-    Session Attrs = {}
-
-Handler:
-             Type = org.springframework.samples.petclinic.vet.VetController
-           Method = public java.lang.String org.springframework.samples.petclinic.vet.VetController.showVetList(java.util.Map<java.lang.String, java.lang.Object>)
-
-Async:
-    Async started = false
-     Async result = null
-
-Resolved Exception:
-             Type = null
-
-ModelAndView:
-        View name = vets/vetList
-             View = null
-        Attribute = specialties
-            value = []
-        Attribute = vets
-            value = org.springframework.samples.petclinic.vet.Vets@9c73fff
-           errors = []
-
-FlashMap:
-       Attributes = null
-
-MockHttpServletResponse:
-           Status = 200
-    Error message = null
-          Headers = {Content-Language=[en], Content-Type=[text/html;charset=UTF-8]}
-     Content type = text/html;charset=UTF-8
-             Body = <!DOCTYPE html>
-
-<html>
-
-  <head>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="shortcut icon" type="image/x-icon" href="/resources/images/favicon.png">
-
-    <title>PetClinic :: a Spring Framework demonstration</title>
-
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" href="/resources/css/petclinic.css"/>
-
-  </head>
-
-<body>
-
-  <nav class="navbar navbar-default" role="navigation">
-      <div class="container">
-          <div class="navbar-header">
-              <a class="navbar-brand" href="/"><span></span></a>
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-                  <span class="sr-only"><os-p>Toggle navigation</os-p></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-          </div>
-          <div class="navbar-collapse collapse" id="main-navbar">
-              <ul class="nav navbar-nav navbar-right">
-  
-                  <li>
-                      <a href="">
-                        <span class="glyphicon  glyphicon-null" aria-hidden="true"></span>
-                        <span></span>
-                      </a>
-                  </li>
-  
-                  <li>
-                      <a href="/" title="home page">
-                        <span class="glyphicon  glyphicon-home" aria-hidden="true"></span>
-                        <span>Inicio</span>
-                      </a>
-                  </li>
-  
-                  <li>
-                      <a href="/owners/find" title="find owners">
-                        <span class="glyphicon  glyphicon-search" aria-hidden="true"></span>
-                        <span>Buscar propietarios</span>
-                      </a>
-                  </li>
-  
-                  <li class="active">
-                      <a href="/vets.html" title="veterinarians">
-                        <span class="glyphicon  glyphicon-th-list" aria-hidden="true"></span>
-                        <span>Veterinarios</span>
-                      </a>
-                  </li>
-  
-                  <li>
-                      <a href="/medicament/find" title="nuevo">
-                        <span class="glyphicon  glyphicon-search" aria-hidden="true"></span>
-                        <span>Medicamentos</span>
-                      </a>
-                  </li>
-                  
-                  <li>
-                      <a href="/oups" title="trigger a RuntimeException to see how it is handled">
-                        <span class="glyphicon  glyphicon-warning-sign" aria-hidden="true"></span>
-                        <span>Error</span>
-                      </a>
-                  </li>
-  
-              </ul>
-          </div>
-      </div>
-  </nav>
-  <div class="container-fluid">
-      <div class="container xd-container">
-  
-          
-
-  <h2>Veterinarios</h2>
-
-  <table id="vets" class="table table-striped">
-    <thead>
-      <tr>
-        <th>Nombre</th>
-        <th>Especialidades</th>
-        <th>Acciones</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-    </tbody>
-  </table>
-  
-
-  
-
-  <a class="btn btn-default" href="/vets/new" >Agregar Veterinarios</a>
-  
-  
-
-
-
-        <br/>
-        <br/>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-center">
-              <img src="/resources/images/spring-pivotal-logo.png" alt="Sponsored by Pivotal"/></div>
-          </div>
-        </div>
-      </div>
-  </div>
-
-  <script src="/webjars/jquery/2.2.4/jquery.min.js"></script>
-  <script src="/webjars/jquery-ui/1.11.4/jquery-ui.min.js"></script>
-  <script src="/webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
-
-    Forwarded URL = null
-   Redirected URL = null
-          Cookies = []
-]]></system-out>
-  </testcase>
+  <testcase name="testInitUpdateVetForm" classname="org.springframework.samples.petclinic.vet.VetControllerTests" time="4.334"/>
+  <testcase name="testInitCreationForm" classname="org.springframework.samples.petclinic.vet.VetControllerTests" time="0.063"/>
+  <testcase name="testDeleteVet" classname="org.springframework.samples.petclinic.vet.VetControllerTests" time="0.031"/>
+  <testcase name="testMostarVets" classname="org.springframework.samples.petclinic.vet.VetControllerTests" time="0.094"/>
 </testsuite>
