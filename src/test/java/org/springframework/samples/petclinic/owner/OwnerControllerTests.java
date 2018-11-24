@@ -175,5 +175,13 @@ public class OwnerControllerTests {
             .andExpect(model().attribute("owner", hasProperty("telephone", is("6085551023"))))
             .andExpect(view().name("owners/ownerDetails"));
     }
+    
+    @Test
+    public void testProcessFindForm() throws Exception {
+         mockMvc.perform(get("/reportaje"))
+            .andExpect(status().isOk())
+//            .andExpect(model().attributeExists("pet"))
+            .andExpect(view().name("owners/ReporteMascotas"));
+    }
 
 }
