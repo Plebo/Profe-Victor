@@ -4,6 +4,7 @@ org\springframework\samples\petclinic\owner\PetValidator.class
 org\springframework\samples\petclinic\medicament\Medicament.class
 org\springframework\samples\petclinic\vet\Vet.class
 org\springframework\samples\petclinic\vet\Specialty.class
+org\springframework\samples\petclinic\vet\SpecialtyFormatter.class
 org\springframework\samples\petclinic\owner\PetTypeFormatter.class
 org\springframework\samples\petclinic\owner\PetController.class
 org\springframework\samples\petclinic\visit\Visit.class
@@ -23,6 +24,5 @@ org\springframework\samples\petclinic\vet\VetController.class
 org\springframework\samples\petclinic\owner\OwnerController.class
 org\springframework\samples\petclinic\owner\Pet.class
 org\springframework\samples\petclinic\system\CacheConfiguration.class
-org\springframework\samples\petclinic\vet\Vet_specialties.class
 org\springframework\samples\petclinic\model\NamedEntity.class
 org\springframework\samples\petclinic\PetClinicApplication.class

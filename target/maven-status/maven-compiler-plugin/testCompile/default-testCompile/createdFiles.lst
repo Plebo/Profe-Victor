@@ -1,4 +1,5 @@
 org\springframework\samples\petclinic\owner\PetTypeFormatterTests.class
+org\springframework\samples\petclinic\medicament\MedicamentControllerTest.class
 org\springframework\samples\petclinic\system\CrashControllerTests.class
 org\springframework\samples\petclinic\owner\OwnerControllerTests.class
 org\springframework\samples\petclinic\service\ClinicServiceTests.class
