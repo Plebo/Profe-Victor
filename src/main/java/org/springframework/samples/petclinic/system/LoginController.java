@@ -10,5 +10,5 @@ package org.springframework.samples.petclinic.system;
  * @author AlexPS
  */
 public class LoginController {
-    //prueba 
+    //prueba 2
 }
