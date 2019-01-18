@@ -5,10 +5,23 @@
  */
 package org.springframework.samples.petclinic.system;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
 /**
  *
  * @author AlexPS
  */
+@Controller
 public class LoginController {
     //prueba 2
+    @GetMapping("/Login")
+    public String welcome() {
+        return "Login";
+    }
+    
+    @GetMapping("/iniciarSesion")
+    public String iniciarSesion() {
+        return "Login";
+    }
 }
