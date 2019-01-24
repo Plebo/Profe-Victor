@@ -1,10 +1,10 @@
 CREATE DATABASE IF NOT EXISTS petclinic;
 
 ALTER DATABASE petclinic
-  DEFAULT CHARACTER SET utf8
+  DEFAULT CHARACTER SET utf8;
   DEFAULT COLLATE utf8_general_ci;
 
-GRANT ALL PRIVILEGES ON petclinic.* TO pc@localhost IDENTIFIED BY 'pc';
+GRANT ALL PRIVILEGES ON petclinic.* TO root@localhost IDENTIFIED BY 'root';
 
 USE petclinic;
 
@@ -12,8 +12,8 @@ CREATE TABLE IF NOT EXISTS vets (
   id INT(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   first_name VARCHAR(30),
   last_name VARCHAR(30),
-  telephone VARCHAR(30)
-  business_hours VARCHAR(30)
+  telephone VARCHAR(30),
+  business_hours VARCHAR(30),
   INDEX(last_name)
 ) engine=InnoDB;
 
@@ -73,3 +73,12 @@ CREATE TABLE IF NOT EXISTS medicaments(
   presentacion VARCHAR(80),
   INDEX(nombre)
 ) engine=InnoDB;
+
+CREATE TABLE IF NOT EXISTS users(
+    id INT(4) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(80),
+    correo VARCHAR(80),
+    password VARCHAR(20),
+    activo INT(1),
+    codigoPostal VARCHAR(20)
+)   engine=InnoDB;
