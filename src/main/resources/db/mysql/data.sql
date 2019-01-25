@@ -56,3 +56,6 @@ INSERT IGNORE INTO visits VALUES (4, 7, '2008-09-04', 'spayed');
 INSERT IGNORE INTO medicaments VALUES (1, 'paracetamol','salvado','tabletas');
 INSERT IGNORE INTO medicaments VALUES (2, 'glimepirida','hoja de maiz','jarabe');
 INSERT IGNORE INTO medicaments VALUES (3, 'amoxicilina','zenteno','tabletas');
+
+INSERT IGNORE INTO users VALUES(1, 'pablo', 'p@a.com', 1234, 1, 29269);
+INSERT IGNORE INTO users VALUES(2, 'alex', 'a@l.com', 1235, 1, 24200);

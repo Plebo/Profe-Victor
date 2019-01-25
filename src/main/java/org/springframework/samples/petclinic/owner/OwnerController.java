@@ -96,6 +96,7 @@ class OwnerController {
             return "redirect:/owners/" + owner.getId();
         } else {
             // multiple owners found
+	    System.out.println("R: " + results);
             model.put("selections", results);
             return "owners/ownersList";
         }
