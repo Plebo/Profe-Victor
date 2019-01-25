@@ -20,4 +20,5 @@ public interface UserReposiroty extends Repository<User, Integer> {
     @Query("SELECT users FROM User users")
     @Transactional (readOnly= true)
     Collection<User> findAll();
+    
 }
